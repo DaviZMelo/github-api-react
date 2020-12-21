@@ -10,6 +10,6 @@ declare module 'styled-components' {
 
       background: string;
       title: string;
-    }
+    };
   }
 }
