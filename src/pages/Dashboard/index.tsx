@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, useEffect } from 'react';
 import DarkModeToggle from 'react-dark-mode-toggle';
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -39,7 +39,7 @@ const Dashboard: React.FC = () => {
     );
   }, [repositories]);
 
-  async function handleAddRepository(event: FormEvent): Promise<void> {
+  async function handleAddRepository(event: React.FormEvent): Promise<void> {
     event.preventDefault();
 
     if (!newRepo) {
