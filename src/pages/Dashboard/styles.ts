@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { shade } from 'polished';
 
 interface FormProps {
   hasError: boolean;
@@ -10,6 +9,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   max-width: 700px;
+  
 
   a {
     display: flex;
@@ -26,7 +26,7 @@ export const Header = styled.header`
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #3a3a3a;
+  color: ${props => props.theme.colors.title};
   max-width: 450px;
   line-height: 58px;
 
@@ -45,7 +45,7 @@ export const Form = styled.form<FormProps>`
     padding: 0 24px;
     border: 0;
     border-radius: 5px 0 0 5px;
-    color: #3a3a3a;
+    color: '#3A3A3A';
     border: 2px solid #fff;
     border-right: 0;
 
@@ -63,7 +63,7 @@ export const Form = styled.form<FormProps>`
   button {
     width: 210px;
     height: 70px;
-    background: #04d361;
+    background: ${props => props.theme.colors.secundary};
     border-radius: 0px 5px 5px 0px;
     border: 0;
     color: #fff;
@@ -71,7 +71,7 @@ export const Form = styled.form<FormProps>`
     transition: background-color 0.2s;
 
     &:hover {
-      background: ${shade(0.2, '#04d361')};
+      background: ${props => props.theme.colors.secundary}99;
     }
   }
 `;
@@ -87,7 +87,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #fff;
+    background: ${props => props.theme.colors.primary};
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -118,7 +118,7 @@ export const Repositories = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: ${props => props.theme.colors.title};
       }
 
       p {
