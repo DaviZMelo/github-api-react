@@ -7,6 +7,11 @@ import Header from '../../components/Header';
 import api from '../../services/api';
 
 import { RepositoryInfo, Issues } from './styles';
+import usePersistedState from '../../utils/usePersistentState';
+import { lightTheme } from '../../styles/theme';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
+
+import GlobalStyle from '../../styles/global';
 
 interface RepositoryParams {
   repository: string;
@@ -37,6 +42,7 @@ const Repository: React.FC = () => {
   const [repository, setRepository] = useState<Repository | null>(null);
   const [issues, setIssues] = useState<Issue[]>([]);
   const [error, setError] = useState(false);
+  const [ theme ] = usePersistedState<DefaultTheme>('light', lightTheme);
   const { params } = useRouteMatch<RepositoryParams>();
 
   useEffect(() => {
@@ -60,6 +66,8 @@ const Repository: React.FC = () => {
 
   return (
     <>
+      <ThemeProvider theme={theme}>
+      <GlobalStyle /> 
       <Header />
       {error && <Redirect to="/404" />}
 
@@ -104,6 +112,7 @@ const Repository: React.FC = () => {
           </a>
         ))}
       </Issues>
+      </ThemeProvider>
     </>
   );
 };
