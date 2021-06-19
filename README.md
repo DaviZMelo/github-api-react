@@ -1,10 +1,22 @@
 # Github API Explorer 
 
-A Github API explorer made with React
+A GitHub explorer with theme switching using Typescript and React.
 
 ![](https://media.giphy.com/media/CucbZRxxp59mG6Exgw/giphy.gif)
 
-## Installation
+## ⚙️ Features
+
+* Theme switcher (Dark and light) 
+* Storage of repositories and themes in LocalStorage 
+* Repository list dashboard
+* Repository dashboard
+
+## 🌎 Techs
+
+* Typescript
+* React
+
+## 💻 Installation
 
 ```bash
 - git clone git@github.com:DaviZMelo/react-darktheme.git
@@ -12,23 +24,10 @@ A Github API explorer made with React
 - npm install | yarn
 ```
 
-## Features
-
-* Theme switcher (Dark and light)
-* Storage of repositories and themes in LocalStorage
-* Repository list dashboard
-* Repository dashboard
-
-## Usage
-
-```
-npm start | yarn start
-```
-
-## Contributing
+## 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## 📄 License
 [MIT](https://choosealicense.com/licenses/mit/)
