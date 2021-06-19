@@ -19,9 +19,9 @@ A GitHub explorer with theme switching using Typescript and React.
 ## 💻 Installation
 
 ```bash
-- git clone git@github.com:DaviZMelo/react-darktheme.git
-- cd react-darktheme
-- npm install | yarn
+git clone git@github.com:DaviZMelo/react-darktheme.git
+cd react-darktheme
+npm install | yarn
 ```
 
 ## 🤝 Contributing
