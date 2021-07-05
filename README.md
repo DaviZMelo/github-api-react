@@ -4,6 +4,10 @@ A GitHub explorer with theme switching using Typescript and React.
 
 ![](https://media.giphy.com/media/CucbZRxxp59mG6Exgw/giphy.gif)
 
+## ▶️ Demo
+
+https://gitexplorer.tk
+
 ## ❔ Why?
 
 I wanted to understand more about contexts, animations, clean design and theme switching in React in a usable app, so I made this explorer.
